@@ -1,0 +1,65 @@
+<html>
+  <body>
+    <p>Details Page</p>
+    <hr class="commonRuler" />
+
+    <mat-button-toggle-group
+      name="fontStyle"
+      aria-label="Font Style"
+      #genderGroup="matButtonToggleGroup"
+    >
+      <mat-button-toggle value="Male">Male</mat-button-toggle>
+      <mat-button-toggle value="Female">Female</mat-button-toggle>
+    </mat-button-toggle-group>
+    <hr class="commonRuler" />
+
+    <mat-button-toggle-group
+      name="fontStyle"
+      aria-label="Font Style"
+      #typeGroup="matButtonToggleGroup"
+    >
+      <mat-button-toggle value="Child">Child</mat-button-toggle>
+      <mat-button-toggle value="Adult">Adult</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <hr class="commonRuler" />
+    <mat-button-toggle-group
+      name="fontStyle"
+      aria-label="Font Style"
+      #drinkGroup="matButtonToggleGroup"
+    >
+      <mat-button-toggle value="Tea">Tea</mat-button-toggle>
+      <mat-button-toggle value="Coffee">Coffee</mat-button-toggle>
+      <mat-button-toggle value="Choclate Milk">Choclate Milk</mat-button-toggle>
+    </mat-button-toggle-group>
+    <hr class="commonRuler" />
+    <mat-button-toggle-group
+      name="fontStyle"
+      aria-label="Font Style"
+      #foodTypeGroup="matButtonToggleGroup"
+    >
+      <mat-button-toggle value="Vegetarian">Vegetarian</mat-button-toggle>
+      <mat-button-toggle value="Non-Vegetarian"
+        >Non-Vegetarian</mat-button-toggle
+      >
+      <mat-button-toggle value="Vegan">Vegan</mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <hr class="commonRuler" />
+    <div class="detailsContainer">
+      <p>Details :</p>
+      <p>
+        Gender: <span class="spanInfo"> {{ genderGroup.value }}</span>
+      </p>
+      <p>
+        Child / Adult: <span class="spanInfo">{{ typeGroup.value }}</span>
+      </p>
+      <p>
+        Like to Drink: <span class="spanInfo">{{ drinkGroup.value }}</span>
+      </p>
+      <p>
+        Food Preference: <span class="spanInfo">{{ foodTypeGroup.value }}</span>
+      </p>
+    </div>
+  </body>
+</html>

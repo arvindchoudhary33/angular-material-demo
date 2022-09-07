@@ -16,7 +16,7 @@ import { FactorialNumComponent } from './factorial-num/factorial-num.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FibonacciComponent } from './fibonacci/fibonacci.component';
 import { MatCardModule } from '@angular/material/card';
-import { DatePickerEgComponent } from './date-picker-eg/date-picker-eg.component';
+import { ToggleButtonEgComponent } from './toggle-button-eg/toggle-button-eg.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -30,8 +30,8 @@ import { MatChipsModule } from '@angular/material/chips';
     EvenOddComponent,
     FactorialNumComponent,
     FibonacciComponent,
-    DatePickerEgComponent,
     ChipsEgComponent,
+    ToggleButtonEgComponent,
   ],
   imports: [
     BrowserModule,

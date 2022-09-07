@@ -2,8 +2,6 @@
 
 html,
 body {
-  background-color: var(--lightBgColor);
-  height: 100%;
   margin: 0;
   font-family: "Ubuntu regular" !important;
 }
@@ -19,16 +17,43 @@ body {
     url(./assets/fonts/Ubuntu/Ubuntu-Regular.ttf) format("truetype");
 }
 :root {
-  --darkBgColor: black;
-  --darkTextColor: whitesmoke;
-  --darkContainerColor: #282828;
-  --lightBgColor: white;
-  --lightTextColor: #282828;
-  --lightContainerColor: whitesmoke;
-  --buttonColor: #458588;
+  --containerColor:transparent
+  --borderColor:LightGray
+  --orangeColorDark:#d65d0e;
+  --orangecolor:Orange;
+  --darkGreen:#98971a;
+  --darkGreenColor:green
 }
+
+
+body{
+  --bgColor:transparent;
+  --textColor:#282828;
+  --borderColor:LightGray;
+  --orangeColor:orange;
+  --orangeColorDark:#d65d0e;
+  --darkGreenColor:green;
+}
+body.dark-theme{
+  --bgColor:#1d2021;
+  --containerColor:#282828;
+  --textColor:#fbf1c7;
+  body{
+    --textColor:#fbf1c7;
+    --darkGreenColor:var(--darkGreen);
+    --borderColor:var(--orangeColorDark);
+    --orangeColor:var(--orangeColorDark);
+  }
+}
+body{
+  background:var(--bgColor);
+}
+
 
 .mainContainer {
   border-radius: 4px;
   padding: 10px;
+  overflow:hidden;
+  margin:0;
+  padding:0;
 }

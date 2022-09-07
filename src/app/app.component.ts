@@ -22,15 +22,21 @@ export class AppComponent implements OnInit {
       programName: 'Fibonacci',
     },
     {
-      programLink: 'datepicker',
-      programName: 'Date Picker',
+      programLink: 'toggleButton',
+      programName: 'Toggle button',
     },
     {
       programLink: 'chips',
       programName: 'Chips demo',
     },
   ];
-
+  toggleDarkTheme(): void {
+    console.log('hey dark theme');
+    // var mainContainer = document.querySelector('.mainContainer');
+    // mainContainer!.classList.toggle('dark-theme');
+    document.body.classList.toggle('dark-theme')
+    console.log(document.body.classList);
+  }
   isDarkMode: boolean = false;
 
   ngOnInit(): void { }

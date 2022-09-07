@@ -15,13 +15,16 @@
       <mat-slide-toggle
         size="large"
         [(ngModel)]="isDarkMode"
+        (click)="toggleDarkTheme()"
         class="themeToggleButton"
       ></mat-slide-toggle>
 
-      <div class="navContainer">
+      <div class="navContainer" >
         <div *ngFor="let links of programRouterLink">
           <a [routerLink]="links.programLink">
-            <mat-card class="programList"> {{ links.programName }}</mat-card></a
+            <mat-card class="programList" routerLinkActive="activeRouterLink">
+              {{ links.programName }}</mat-card
+            ></a
           >
         </div>
       </div>
