@@ -1,0 +1,56 @@
+<html>
+  <body>
+    <p>Details Page</p>
+    <br />
+
+    <mat-button-toggle-group
+      name="fontStyle"
+      aria-label="Font Style"
+      #group="matButtonToggleGroup"
+    >
+      <mat-button-toggle value="Male">Male</mat-button-toggle>
+      <mat-button-toggle value="Female"
+        >Female</mat-button-toggle
+      > </mat-button-toggle-group
+    ><br />
+    <mat-button-toggle-group
+      name="fontStyle"
+      aria-label="Font Style"
+      #group1="matButtonToggleGroup"
+    >
+      <mat-button-toggle value="Child">Child</mat-button-toggle>
+      <mat-button-toggle value="Adult"
+        >Adult</mat-button-toggle
+      > </mat-button-toggle-group
+    ><br />
+    <mat-button-toggle-group
+      name="fontStyle"
+      aria-label="Font Style"
+      #group2="matButtonToggleGroup"
+    >
+      <mat-button-toggle value="Tea">Tea</mat-button-toggle>
+      <mat-button-toggle value="Coffee">Coffee</mat-button-toggle>
+      <mat-button-toggle value="Choclate Milk"
+        >Choclate Milk</mat-button-toggle
+      > </mat-button-toggle-group
+    ><br />
+    <mat-button-toggle-group
+      name="fontStyle"
+      aria-label="Font Style"
+      #group3="matButtonToggleGroup"
+    >
+      <mat-button-toggle value="Vegetarian">Vegetarian</mat-button-toggle>
+      <mat-button-toggle value="Non-Vegetarian"
+        >Non-Vegetarian</mat-button-toggle
+      >
+      <mat-button-toggle value="Vegan">Vegan</mat-button-toggle>
+    </mat-button-toggle-group>
+    <div class="display_details">
+      <p>Details Displayed Here</p>
+      <span>Gender: {{ group.value }}</span>
+      <span>Child / Adult: {{ group1.value }}</span>
+      <span>Like to Drink: {{ group2.value }}</span>
+      <span>Food Preference: {{ group3.value }}</span>
+    </div>
+  </body>
+</html>

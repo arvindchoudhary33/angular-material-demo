@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div class="user-registration">
+      <input #evenOddNum placeholder="Enter a number" />
+      <button
+        mat-raised-button
+        color="primary"
+        type="submit"
+        (click)="evenOdd(evenOddNum.value)"
+      >
+        SUBMIT
+      </button>
+      <span
+        style="width: 100%; text-align: center; margin: 10px"
+        class="mat-display-3"
+        >{{ evenOddString }}</span
+      >
+    </div>
+  </body>
+</html>

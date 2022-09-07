@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  background-color: var(--lightBgColor);
+  height: 100%;
+  margin: 0;
+  font-family: "Ubuntu regular" !important;
+}
+@font-face {
+  font-family: "Ubuntu light";
+  src: local("Ubuntu"),
+    url(./assets/fonts/Ubuntu/Ubuntu-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Ubuntu regular";
+  src: local("Ubuntu"),
+    url(./assets/fonts/Ubuntu/Ubuntu-Regular.ttf) format("truetype");
+}
+:root {
+  --darkBgColor: black;
+  --darkTextColor: whitesmoke;
+  --darkContainerColor: #282828;
+  --lightBgColor: white;
+  --lightTextColor: #282828;
+  --lightContainerColor: whitesmoke;
+  --buttonColor: #458588;
+}
+
+.mainContainer {
+  border-radius: 4px;
+  padding: 10px;
+}
