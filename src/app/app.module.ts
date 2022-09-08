@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { Component } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 import { MatTabsModule } from '@angular/material/tabs';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
@@ -23,6 +24,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ChipsEgComponent } from './chips-eg/chips-eg.component';
 import { MatChipsModule } from '@angular/material/chips';
+import { DatePickerEgComponent } from './date-picker-eg/date-picker-eg.component';
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
@@ -32,6 +34,7 @@ import { MatChipsModule } from '@angular/material/chips';
     FibonacciComponent,
     ChipsEgComponent,
     ToggleButtonEgComponent,
+    DatePickerEgComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +55,7 @@ import { MatChipsModule } from '@angular/material/chips';
     MatRippleModule,
     MatButtonToggleModule,
     MatChipsModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

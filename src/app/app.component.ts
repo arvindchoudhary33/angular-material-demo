@@ -29,12 +29,16 @@ export class AppComponent implements OnInit {
       programLink: 'chips',
       programName: 'Chips demo',
     },
+    {
+      programLink: 'datePicker',
+      programName: 'Date Picker',
+    },
   ];
   toggleDarkTheme(): void {
     console.log('hey dark theme');
     // var mainContainer = document.querySelector('.mainContainer');
     // mainContainer!.classList.toggle('dark-theme');
-    document.body.classList.toggle('dark-theme')
+    document.body.classList.toggle('dark-theme');
     console.log(document.body.classList);
   }
   isDarkMode: boolean = false;

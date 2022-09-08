@@ -57,6 +57,8 @@ a:active {
   padding: 10px;
   border: 1px solid var(--borderColor);
   border-radius: 4px;
+  overflow-x: hidden;
+  min-width: 150px;
 }
 .routerOutlet {
   align-self: center;

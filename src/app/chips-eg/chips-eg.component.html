@@ -2,26 +2,34 @@
 
 <html>
   <body>
-    <p>College Course Admission</p>
-    <mat-form-field class="example-chip-list" appearance="fill">
-      <label>Enter Subject : </label><br />
-      <br />
-      <mat-chip-list #chipList aria-label="Subject selection">
-        <mat-chip *ngFor="let Sub of Subjects" (removed)="remove(Sub)">
-          {{ Sub.name }}
-          <button matChipRemove>
-            <mat-icon>cancel</mat-icon>
-          </button>
-        </mat-chip>
-        <input
-          placeholder="Add Subjects..."
-          [matChipInputFor]="chipList"
-          [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-          [matChipInputAddOnBlur]="addOnBlur"
-          (matChipInputTokenEnd)="add($event)"
-        /> </mat-chip-list
-      ><br />
-
+    <div>
+      <p>College Course Admission</p>
+      <mat-form-field class="matFormField" appearance="fill">
+        <label>Enter Subject : </label><br />
+        <br />
+        <mat-chip-list
+          #chipList
+          aria-label="Subject selection"
+          class="matChipList"
+        >
+          <mat-chip *ngFor="let Sub of Subjects" (removed)="remove(Sub)">
+            {{ Sub.name }}
+            <button matChipRemove>
+              <mat-icon>cancel</mat-icon>
+            </button>
+          </mat-chip>
+          <input
+            class="matChipInput"
+            placeholder="Add Subjects..."
+            [matChipInputFor]="chipList"
+            [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+            [matChipInputAddOnBlur]="addOnBlur"
+            (matChipInputTokenEnd)="add($event)"
+          /> </mat-chip-list
+        ><br />
+      </mat-form-field>
+    </div>
+    <!-- <mat-form-field>
       <label>Extra Curricular Activities : </label><br /><br />
       <mat-chip-list #chipList aria-label="Activities">
         <mat-chip *ngFor="let Sub of Subjects" (removed)="remove(Sub)">
@@ -40,6 +48,6 @@
       ><br />
 
       <label>Class : </label>
-    </mat-form-field>
+    </mat-form-field> -->
   </body>
 </html>
